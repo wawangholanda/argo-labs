@@ -15,7 +15,7 @@ spec:
       autoPromotionEnabled: true
       autoPromotionSeconds: 30
       activeService: vote
-      previewService: vote-preview
+      previewService: vote-preview      
   template:
     metadata:
       labels:
@@ -23,7 +23,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/vote:v1
+      - image: schoolofdevops/vote:v2
         name: vote
         imagePullPolicy: Always
         resources: 
